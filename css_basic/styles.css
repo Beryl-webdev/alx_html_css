@@ -1,0 +1,38 @@
+/* Make the body a flex container in column direction */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Flex layout for the main section */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+/* Article gets 2/3 of space */
+article {
+  flex: 2;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  padding: 1em;
+}
+
+/* Aside gets 1/3 of space */
+aside {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #e0e0e0;
+  padding: 1em;
+}
+
+/* Styling for header and footer */
+header, footer {
+  padding: 1em;
+  background-color: #ccc;
+  text-align: center;
+}
